@@ -1,0 +1,5 @@
+install.packages("HistData")
+library(HistData)
+attach(Nightingale)
+deaths = c(sum(Disease), sum(Wounds), sum(Other))
+pie(deaths, labels=c("Disease","Wounds","Other"))
